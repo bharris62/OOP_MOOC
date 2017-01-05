@@ -4,19 +4,41 @@ public class Printing {
         // 39.1
         // you can print one star with the command
         // System.out.print("*");
-        // call this command amount times        
+        // call this command amount times
+
+        while (amount > 0) {
+            System.out.printf("*");
+            amount--;
+        }
+        System.out.printf("\n");
     }
 
     public static void printSquare(int sideSize) {
         // 39.2
+        int size = sideSize;
+        while(sideSize > 0) {
+            printStars(size);
+            sideSize--;
+        }
     }
 
     public static void printRectangle(int width, int height) {
         // 39.3
+
+        while(height > 0) {
+            printStars(width);
+            height--;
+        }
+
     }
 
     public static void printTriangle(int size) {
         // 39.4
+        int num = 1;
+        while(num <= size) {
+            printStars(num);
+            num++;
+        }
     }
 
     public static void main(String[] args) {
@@ -31,7 +53,7 @@ public class Printing {
         printRectangle(5, 6);
         System.out.println("\n---");
         printTriangle(3);
-        System.out.println("\n---");
+//        System.out.println("\n---");
     }
 
 }
