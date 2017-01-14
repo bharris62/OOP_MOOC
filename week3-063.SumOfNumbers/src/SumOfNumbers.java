@@ -2,8 +2,12 @@ import java.util.ArrayList;
 
 public class SumOfNumbers {
     public static int sum(ArrayList<Integer> list) {
-        // Write your code here
-        return 0;
+        int count = 0;
+
+        for (int num : list) {
+            count+=num;
+        }
+        return count;
     }
 
     public static void main(String[] args) {

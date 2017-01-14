@@ -6,7 +6,15 @@ public class ReversingText {
     public static String reverse(String text) {
         // write your code here
         // note that method does now print anything, it RETURNS the reversed string
-        return "";
+        String helper = "";
+        int counter = text.length()-1;
+
+        while(counter >= 0){
+            helper = helper + text.charAt(counter);
+            counter--;
+
+        }
+        return helper;
     }
 
     public static void main(String[] args) {
