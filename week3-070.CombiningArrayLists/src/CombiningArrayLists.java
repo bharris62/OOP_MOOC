@@ -4,6 +4,12 @@ import java.util.Collections;
 
 public class CombiningArrayLists {
 
+    public static void combine(ArrayList<Integer> first, ArrayList<Integer> second) {
+        for(int number : second) {
+            first.add(number);
+        }
+    }
+
     public static void main(String[] args) {
 
         // You can change the values while testing
@@ -23,7 +29,7 @@ public class CombiningArrayLists {
         // list2.add(7);
 
         // Implement the following method and then remove the comment
-        // combine(list1, list2);
+        combine(list1, list2);
         System.out.println(list1);
         System.out.println(list2);
 

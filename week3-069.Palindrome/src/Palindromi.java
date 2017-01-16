@@ -3,8 +3,23 @@ import java.util.Scanner;
 public class Palindromi {
 
     public static boolean palindrome(String text) {
-        // write code here
+        if (text.equals(reverse(text))){
+            return true;
+        }
         return false;
+    }
+
+    public static String reverse(String text) {
+
+        String helper = "";
+        int counter = text.length()-1;
+
+        while(counter >= 0){
+            helper = helper + text.charAt(counter);
+            counter--;
+
+        }
+        return helper;
     }
 
     public static void main(String[] args) {

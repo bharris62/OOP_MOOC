@@ -3,17 +3,31 @@ import java.util.ArrayList;
 public class Variance {
     // Copy here sum from exercise 63 
     public static int sum(ArrayList<Integer> list) {
-        return 0;
+        int count = 0;
+
+        for (int num : list) {
+            count+=num;
+        }
+        return count;
     }
     
     // Copy here average from exercise 64 
     public static double average(ArrayList<Integer> list) {
-        return 0;
+        double avg = sum(list)/(double)list.size();
+        return avg;
     }
 
     public static double variance(ArrayList<Integer> list) {
-        // write code here
-        return 0;
+        double numerator = 0;
+        double theAverages = average(list);
+
+        for (int num : list) {
+            double numbers = (num - theAverages);
+            numerator +=Math.pow(numbers,2);
+        }
+
+        double var = numerator / (list.size() - 1);
+        return var;
     }
     
     public static void main(String[] args) {

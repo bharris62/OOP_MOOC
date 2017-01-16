@@ -5,7 +5,21 @@ public class MoreThanOnce {
 
     public static boolean moreThanOnce(ArrayList<Integer> list, int searched) {
         // write your code here
-        return false;
+        boolean anyDupes = false;
+
+        int searching = 0;
+
+        for (int number : list) {
+            if (number == searched) {
+                searching++;
+            }
+        }
+
+        if (searching >= 2) {
+            anyDupes = true;
+        }
+
+        return anyDupes;
     }
 
     public static void main(String[] args) {
