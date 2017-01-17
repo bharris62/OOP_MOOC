@@ -5,5 +5,12 @@ public class Main {
         counter.printValue();
         counter.decrease();
         counter.decrease();
+        counter.printValue();
+        counter.reset();
+        counter.decrease();
+        counter.printValue();
+        counter.printValue();
+        counter.setInitial();
+        counter.printValue();
     }
 }
