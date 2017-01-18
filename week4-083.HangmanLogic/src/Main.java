@@ -4,5 +4,6 @@ public class Main {
         HangmanLogic logic = new HangmanLogic("parameter");
         HangmanUserInterface game = new HangmanUserInterface(logic);
         game.start();
+
     }
 }
