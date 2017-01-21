@@ -7,6 +7,7 @@ public class MyDate {
         this.day = day;
         this.month = montd;
         this.year = year;
+
     }
 
     public String toString() {
@@ -28,6 +29,18 @@ public class MyDate {
         }
 
         return false;
+    }
+
+    public int differenceInYears(MyDate comparedDate) {
+        int year = this.year - comparedDate.year;
+        int day = this.day - comparedDate.day;
+        int month = this.month - comparedDate.month;
+
+        int totalDaysInYear = 365 * year;
+        int monthDiff = month * 30;
+
+        return Math.abs((totalDaysInYear + monthDiff + day) / 365);
+
     }
 
 }
