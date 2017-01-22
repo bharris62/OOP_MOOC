@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import nhlstats.NHLStatistics;
 
@@ -19,36 +18,35 @@ public class NhlStatisticsPart2 {
             }
 
             if (command.equals("points")) {
-                // Print the top ten players sorted by points.
                 NHLStatistics.sortByPoints();
                 NHLStatistics.top(10);
+                // Print the top ten players sorted by points.
             } else if (command.equals("goals")) {
-                // Print the top ten players sorted by goals.
                 NHLStatistics.sortByGoals();
                 NHLStatistics.top(10);
+                // Print the top ten players sorted by goals.
             } else if (command.equals("assists")) {
-                //  Print the top ten players sorted by assists.
                 NHLStatistics.sortByAssists();
                 NHLStatistics.top(10);
+                //  Print the top ten players sorted by assists.
             } else if (command.equals("penalties")) {
-                //  Print the top ten players sorted by penalties.
                 NHLStatistics.sortByPenalties();
                 NHLStatistics.top(10);
+                //  Print the top ten players sorted by penalties.
             } else if (command.equals("player")) {
-                // Ask the user first which player's statistics are needed and then print them.
-                System.out.print("which player: ");
+                System.out.println("Which player's statistics are needed ?");
                 String player = reader.nextLine();
-
                 NHLStatistics.searchByPlayer(player);
+                // Ask the user first which player's statistics are needed and then print them.
             } else if (command.equals("club")) {
+                System.out.println("Which club's statistics are needed ?");
+                String club = reader.nextLine();
+                NHLStatistics.sortByPoints();
+                NHLStatistics.teamStatistics(club);
+
+
                 // Ask the user first which club's statistics are needed and then print them.
                 // Note: When printing statistics they should be ordered by points (so the players with the most points come first).
-                System.out.print("which club: ");
-                String club = reader.nextLine();
-
-                NHLStatistics.teamStatistics(club);
-                NHLStatistics.sortByPoints();
-
             }
 
         }
