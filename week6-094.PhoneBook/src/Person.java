@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Created by blakebharris on 1/22/2017.
  */
@@ -24,7 +22,6 @@ public class Person {
     public void changeNumber(String newNumber) {
         this.number = newNumber;
     }
-
 
 
     public String toString(){
