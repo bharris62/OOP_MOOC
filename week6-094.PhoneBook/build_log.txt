@@ -42,12 +42,12 @@
 init:
 
 -deps-jar-init:
-   [delete] Deleting: C:\Users\blakebharris\Documents\IdeaProjects\TMCProjects\2013-OOProgrammingWithJava-PART1\2013-OOProgrammingWithJava-PART1\week6-094.PhoneBook\build\built-jar.properties
+   [delete] Deleting: C:\Users\blakebharris\Documents\IdeaProjects\TMCProjects\2013-OOProgrammingWithJava-PART1\week6-094.PhoneBook\build\built-jar.properties
 
 deps-jar:
 
 -warn-already-built-jar:
-[propertyfile] Updating property file: C:\Users\blakebharris\Documents\IdeaProjects\TMCProjects\2013-OOProgrammingWithJava-PART1\2013-OOProgrammingWithJava-PART1\week6-094.PhoneBook\build\built-jar.properties
+[propertyfile] Updating property file: C:\Users\blakebharris\Documents\IdeaProjects\TMCProjects\2013-OOProgrammingWithJava-PART1\week6-094.PhoneBook\build\built-jar.properties
 
 -check-automatic-build:
 
@@ -64,9 +64,9 @@ deps-jar:
 -compile-depend:
 
 -do-compile:
-    [javac] Compiling 3 source files to C:\Users\blakebharris\Documents\IdeaProjects\TMCProjects\2013-OOProgrammingWithJava-PART1\2013-OOProgrammingWithJava-PART1\week6-094.PhoneBook\build\classes
+    [javac] Compiling 3 source files to C:\Users\blakebharris\Documents\IdeaProjects\TMCProjects\2013-OOProgrammingWithJava-PART1\week6-094.PhoneBook\build\classes
     [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
-    [javac] C:\Users\blakebharris\Documents\IdeaProjects\TMCProjects\2013-OOProgrammingWithJava-PART1\2013-OOProgrammingWithJava-PART1\week6-094.PhoneBook\src\Phonebook.java:10: error: diamond operator is not supported in -source 1.6
+    [javac] C:\Users\blakebharris\Documents\IdeaProjects\TMCProjects\2013-OOProgrammingWithJava-PART1\week6-094.PhoneBook\src\Phonebook.java:10: error: diamond operator is not supported in -source 1.6
     [javac]         this.phonebook = new ArrayList<>();
     [javac]                                        ^
     [javac]   (use -source 7 or higher to enable diamond operator)

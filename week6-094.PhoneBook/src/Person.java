@@ -25,6 +25,6 @@ public class Person {
 
 
     public String toString(){
-        return this.name + "  number: " + this.number;
+        return this.name + " " + " number: " + this.number;
     }
 }
