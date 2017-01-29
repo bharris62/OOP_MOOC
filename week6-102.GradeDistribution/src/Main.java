@@ -17,8 +17,9 @@ public class Main {
             grades.addGrades(num);
 
         }
-
-        System.out.println(grades.acceptancePercentage());
+        System.out.println("Grade distribution: ");
         grades.distributeGrades();
+        grades.printGradeStars();
+        System.out.println("Acceptance percentage: " + grades.acceptancePercentage());
     }
 }

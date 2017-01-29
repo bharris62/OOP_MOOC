@@ -1,6 +1,7 @@
 
 
-import java.util.ArrayList;
+import java.util.*;
+
 /**
  * Created by BHarris on 1/27/17.
  */
@@ -11,6 +12,8 @@ public class GradeDistribution {
     public GradeDistribution() {
         this.grades = new ArrayList<>();
         this.gradeDistribution = new String[6];
+        Arrays.fill(gradeDistribution, "");
+
     }
 
     public void addGrades(int grade){
@@ -35,17 +38,16 @@ public class GradeDistribution {
                 this.gradeDistribution[3] += "*";
             } else if (grade < 50) {
                 this.gradeDistribution[4] += "*";
-            } else if (grade < 61) {
+            } else {
                 this.gradeDistribution[5] += "*";
             }
         }
-        printGradeStars();
 
     }
 
     public void printGradeStars(){
-        for (String grade : gradeDistribution) {
-            System.out.println(grade);
+        for (int i = gradeDistribution.length - 1; i >= 0; i--) {
+            System.out.println(i + ": "+ gradeDistribution[i]);
         }
     }
 
