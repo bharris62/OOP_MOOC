@@ -5,12 +5,12 @@ import java.util.ArrayList;
  * Created by BHarris on 1/27/17.
  */
 public class GradeDistribution {
-    private ArrayList<String> gradeDistribution;
+    private String[] gradeDistribution;
     private ArrayList<Integer> grades;
 
     public GradeDistribution() {
         this.grades = new ArrayList<>();
-        this.gradeDistribution = new ArrayList<>();
+        this.gradeDistribution = new String[6];
     }
 
     public void addGrades(int grade){
@@ -26,26 +26,26 @@ public class GradeDistribution {
     public void distributeGrades(){
         for (int grade : this.grades) {
             if (grade < 30) {
-                gradeDistribution.add(0,"*");
+                this.gradeDistribution[0] += "*";
             } else if (grade < 35) {
-                gradeDistribution.add(1,"*");
+                this.gradeDistribution[1] += "*";
             } else if (grade < 40) {
-                gradeDistribution.add(2,"*");
+                this.gradeDistribution[2] += "*";
             } else if (grade < 45) {
-                gradeDistribution.add(3,"*");
+                this.gradeDistribution[3] += "*";
             } else if (grade < 50) {
-                gradeDistribution.add(4,"*");
+                this.gradeDistribution[4] += "*";
             } else if (grade < 61) {
-                gradeDistribution.add(5,"*");
+                this.gradeDistribution[5] += "*";
             }
         }
+        printGradeStars();
+
     }
 
     public void printGradeStars(){
-        int count = 0;
-        for(String dist : this.gradeDistribution) {
-            System.out.println(dist);
-            count++;
+        for (String grade : gradeDistribution) {
+            System.out.println(grade);
         }
     }
 
